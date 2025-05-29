@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "author": "Sambit Sahoo",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 125.4, "left": -39, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 54, "left": 61.4, "attrs": { "color": "red" } }
+  ],
+  "connections": [ [ "led1:A", "uno:13", "red", [ "v0" ] ], [ "led1:C", "uno:GND.1", "black", [ "v0" ] ] ],
+  "dependencies": {}
+}
