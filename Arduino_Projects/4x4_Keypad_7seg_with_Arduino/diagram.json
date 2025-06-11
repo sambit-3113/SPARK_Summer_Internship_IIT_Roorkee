@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "Sambit Sahoo",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 279, "left": -211.8, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -194, "left": -138.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "keypad1:R1", "uno:2", "#8f4814", [ "v57.6", "h57.6" ] ],
+    [ "keypad1:R2", "uno:3", "red", [ "v67.2", "h57.2" ] ],
+    [ "keypad1:R3", "uno:4", "orange", [ "v76.8", "h28.5" ] ],
+    [ "keypad1:R4", "uno:5", "gold", [ "v86.4", "h19" ] ],
+    [ "keypad1:C1", "uno:6", "limegreen", [ "v96", "h-9.7" ] ],
+    [ "keypad1:C2", "uno:7", "green", [ "v105.6", "h-28.8" ] ],
+    [ "keypad1:C3", "uno:8", "blue", [ "v115.2", "h-57.75", "v19.2" ] ],
+    [ "keypad1:C4", "uno:9", "violet", [ "v124.8", "h-77.1" ] ]
+  ],
+  "dependencies": {}
+}
