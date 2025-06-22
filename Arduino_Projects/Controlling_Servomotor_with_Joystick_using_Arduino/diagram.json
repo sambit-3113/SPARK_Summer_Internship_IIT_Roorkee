@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Sambit Sahoo",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 87, "left": 57, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -69.2, "left": 96, "attrs": {} },
+    { "type": "wokwi-analog-joystick", "id": "joystick1", "top": 37.8, "left": -129, "attrs": {} },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": -124.04, "left": 57.6, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": -86.4, "left": -19.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "joystick1:VCC", "uno:5V", "red", [ "v153.6", "h316.8" ] ],
+    [ "joystick1:GND", "uno:GND.2", "black", [ "v163.2", "h288" ] ],
+    [ "joystick1:HORZ", "uno:A0", "green", [ "v172.8", "h336" ] ],
+    [ "servo1:PWM", "uno:3", "green", [ "h-38.4", "v67.4", "h220.8" ] ],
+    [ "servo1:GND", "uno:GND.3", "black", [ "h-57.6", "v355.2", "h192" ] ],
+    [ "gnd1:GND", "servo1:GND", "black", [ "v-28.8", "h48", "v96" ] ],
+    [ "vcc1:VCC", "servo1:V+", "red", [ "v86.4" ] ]
+  ],
+  "dependencies": {}
+}
