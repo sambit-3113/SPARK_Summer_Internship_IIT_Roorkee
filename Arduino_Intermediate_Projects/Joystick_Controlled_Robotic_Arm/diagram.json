@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "author": "",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "u1",
+      "top": 246.65910000000005,
+      "left": 177.63009599999998,
+      "attrs": {}
+    },
+    { "type": "wokwi-servo", "id": "p2", "top": 4.973799150320701e-14, "left": 0, "attrs": {} },
+    { "type": "wokwi-servo", "id": "p3", "top": -2, "left": 508.8, "attrs": {} },
+    { "type": "wokwi-servo", "id": "p4", "top": -2, "left": 259.2, "attrs": {} },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "p5",
+      "top": 341.77602750000005,
+      "left": 746.6827199999999,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "p6",
+      "top": 341.7760274999998,
+      "left": 971.6827199999999,
+      "attrs": {}
+    },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": 87.16, "left": 854.4, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": 172.8, "left": 853.8, "attrs": {} }
+  ],
+  "connections": [
+    [ "p2:PWM", "u1:5", "#0E4CA1", [ "v65.4", "h385.63" ] ],
+    [ "p4:PWM", "u1:4", "#77068e", [ "h-19.2", "v57.8", "h155.13" ] ],
+    [ "p3:PWM", "u1:3", "#08cff7", [ "h-58.8", "v94.2", "h-45.6", "v92.46" ] ],
+    [ "p5:VCC", "u1:5V", "#ff0000", [ "v32.02", "h-443.68", "v-51.44" ] ],
+    [ "u1:5V", "p6:VCC", "#ff0000", [ "h-1.63", "v51.44", "h668.68" ] ],
+    [ "p6:HORZ", "u1:A0", "#23d14c", [ "v60.82", "h-638.26" ] ],
+    [ "p6:VERT", "u1:A1", "#f57905", [ "v70.42", "h-619.15" ] ],
+    [ "p5:HORZ", "u1:A2", "#e2db03", [ "v46.42", "h-394.26" ] ],
+    [ "gnd1:GND", "p3:GND", "black", [ "h-384", "v-122.8" ] ],
+    [ "vcc1:VCC", "p3:V+", "red", [ "h-374.4", "v0", "v-57.7" ] ],
+    [ "p2:V+", "vcc1:VCC", "red", [ "h-9.6", "v55.7" ] ],
+    [ "p4:V+", "vcc1:VCC", "red", [ "h-28.8", "v57.7", "h576", "v28.8" ] ],
+    [ "p4:GND", "gnd1:GND", "black", [ "v124.8", "h604.8" ] ],
+    [ "p2:GND", "gnd1:GND", "black", [ "h-19.2", "v122.8" ] ],
+    [ "p6:GND", "u1:GND.2", "black", [ "v22.42", "h-695.96" ] ],
+    [ "p5:GND", "u1:GND.2", "black", [ "v22.42", "h-470.96" ] ],
+    [ "gnd1:GND", "u1:GND.2", "black", [ "h-268.8", "v307.2", "h-248.07" ] ]
+  ],
+  "dependencies": {}
+}
