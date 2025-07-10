@@ -1,0 +1,1 @@
+There are two folders containing two different methods of automatic room temperature monitoring system in which Code 1 uses fixed temperature thresholds for fan speed control, while Code 2 dynamically adjusts fan speed using PWM mapped to temperature.
